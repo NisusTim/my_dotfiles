@@ -406,9 +406,9 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Apearence/Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" encodings 2018-xx-xx
+" encodings 2018-12-30
 set fileencodings=utf8,big5,gbk,latin1
-set fileencoding=big5
+set fileencoding=utf8
 " tabs and spaces handling, 2019-xx-xx
 set tabstop=2
 set softtabstop=2
