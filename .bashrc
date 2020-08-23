@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[1;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -116,10 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-### kitty icat to view images, nisustim
-alias icat='kitty +kitten icat'
-### serial tool: python miniterm, nisustim 2019-08-19
-#alias miniterm='python3 /snap/core18/1074/usr/lib/python3/dist-packages/serial/tools/miniterm.py'
-function miniterm() { python3 /snap/core18/1074/usr/lib/python3/dist-packages/serial/tools/miniterm.py -e --eol CR --exit-char 03 "$@"; }
+source <(kitty + complete setup bash)
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

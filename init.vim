@@ -448,6 +448,16 @@ func! CompileNRun()
     endif
 endfunc
 
+map <F6> :call Compile()<CR>
+func! Compile()
+    exec "w"
+    if &filetype == 'c'
+        exec "!time gcc % -o %:r;"
+    elseif &filetype == 'cpp'
+        exec "!time g++ % -o %:r;"
+    endif
+endfunc
+
 " Syntastic, 2019-08-xx -------------------------
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasitcStatuslineFlag()}
