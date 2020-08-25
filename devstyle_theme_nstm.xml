@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="99999" name="Tim" modified="2019-12-05 14:00:00" author="NisusTim" website="">
+    <searchResultIndication color="#D8D8D8"/>
+    <filteredSearchResultIndication color="#D8D8D8"/>
+    <occurrenceIndication color="#000000"/>
+    <writeOccurrenceIndication color="#000000"/>
+    <findScope color="#000000"/>
+    <deletionIndication color="#FF0000"/>
+    <sourceHoverBackground color="#FFFFFF"/>
+    <singleLineComment color="#008000"/>
+    <multiLineComment color="#008000"/>
+    <commentTaskTag color="#008000"/>
+    <javadoc color="#65727E"/>
+    <javadocLink color="#75715E"/>
+    <javadocTag color="#75715E"/>
+    <javadocKeyword color="#75715E"/>
+    <class color="#B080B0"/>
+    <interface color="#B080B0"/>
+    <method color="#4080D0"/>
+    <methodDeclaration color="#4080D0" bold="true" italic="true"/>
+    <bracket color="#FFFFFF"/>
+    <number color="#FFFF00"/>
+    <string color="#80C080"/>
+    <operator color="#80B0D0"/>
+    <keyword color="#C38FCF" bold="true"/>
+    <annotation color="#FFFFFF"/>
+    <staticMethod color="#4080D0"/>
+    <localVariable color="#FFAA00"/>
+    <localVariableDeclaration color="#FFAA00"/>
+    <field color="#FFFFFF"/>
+    <staticField color="#FFCC00"/>
+    <staticFinalField color="#FFCC00"/>
+    <deprecatedMember color="#FF0000"/>
+    <inheritedMethod color="#4080D0"/>
+    <abstractMethod color="#4080D0"/>
+    <parameterVariable color="#FFAA00"/>
+    <typeArgument color="#FFCC00"/>
+    <typeParameter color="#FFCC00"/>
+    <constant color="#FFFF00"/>
+    <background color="#202030"/>
+    <currentLine color="#775B7D"/>
+    <foreground color="#CDD2DE"/>
+    <lineNumber color="#6D7F89"/>
+    <selectionBackground color="#223945"/>
+    <selectionForeground color="#CDD2DE"/>
+</colorTheme>
