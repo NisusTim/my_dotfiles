@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 
@@ -10,3 +10,24 @@ eval $BRIGHTNESS_2
 
 hash easystroke 2>/dev/null && ! pgrep -x easystroke && easystroke &
 hash xmodmap 2>/dev/null && xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+function main()
+{
+  :
+  #lowercase_name
+}
+
+function lowercase_name()
+{
+  tmp=${IFS}
+  list=($(find . -maxdepth 1))
+  for i in ${list[@]}; do
+    j=$(echo $i | tr '[A-Z]' '[a-z]' | tr ' ' '_')
+    mv ${i} ${j}
+  done
+  IFS=${tmp}
+}
+
+main "$@"
+$*
+exit
